@@ -37,3 +37,7 @@ If the issue can not be resolved by support within the first hour, I would say i
 
 For an escalation it´s important to document all that has been tried already and to include all relevant logs from before to failure up until the moment of escalation.
 
+1. Escalate to Network/IT Team: If the issue is related to backend connectivity.
+2. Escalate to Field Technicians: If physical intervention is needed (hardware replacement, power cycle, cable reconnection).
+3. Escalate to Manufacturer: If the station has a firmware/software bug requiring further investigation.
+4. Inform Management: If the issue persists for an extended period, leading to severe customer impact.
