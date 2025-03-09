@@ -1,0 +1,39 @@
+Scenario 1: EVSE Charging Station Downtime
+
+Background: A high-traffic public EVSE station has suddenly gone offline.
+Customers are unable to charge their vehicles, and there are several complaints on
+social media. The system indicates a "communication error" with the station.
+Question:
+
+● How would you go about diagnosing the problem remotely?
+
+I would start by seeing if anything stands out while doing some connectivity tests:
+- Pinging the station
+- Pinging other stations at the same site (To verify if single point issue or site issue)
+- Have a look at backend systems and check OCPP logs for any errors.
+
+Besides that I would gather local logs of the station if possible and check for hardware and software logs (Possible overheating, firmware issues, network issues)
+
+
+● What steps would you take first to resolve the issue?
+
+- Try and restart the station to see whether connectivity issue is resolved.
+- Reset cached network settings and re-configure to try and re-establish network connection.
+- If cellular of WiFi check the SIM status, APN settings and signal/channel strength and interference.
+- If Zigbee enabled, make sure WiFi is not in same channel range as Zigbee to avoid interference.
+
+If none of this helps, ask someone onsite to physically inspect the charger and take photos to send to me. Ask them to reconnect any possible disconnected wires and have a look at possible blown fuses.
+
+● How would you prioritize addressing this issue while handling other ongoing support tickets or tasks?
+
+Since this is a high impact issue and there are complaints on social media I would mark the ticket as High priority and start troubleshooting and applying possible quick fixes immediately.
+
+If my own case load is already high I will ask help of colleagues to take over some of my existing tickets and help me get on top of the high priority one.
+
+
+● When would you escalate the issue, and to whom?
+
+If the issue can not be resolved by support within the first hour, I would say it has be escalated to engineering and get the account manager for the client involved as well to manage further expectations.
+
+For an escalation it´s important to document all that has been tried already and to include all relevant logs from before to failure up until the moment of escalation.
+
